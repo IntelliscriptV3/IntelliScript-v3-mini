@@ -14,7 +14,7 @@ class Settings:
     MAIL_FROM = os.getenv("MAIL_FROM", "no-reply@intelliscript.local")
     # URL (scheme+host+port) for external classifier service used by /chat/classify
     # Prefer explicit CLASSIFIER_URL, but accept legacy LLM_URL env var for older setups.
-    LLM_URL = os.getenv("LLM_URL", "http://localhost:8001")
+    LLM_URL = os.getenv("LLM_URL", "http://localhost:8800")
     CLASSIFIER_URL = os.getenv("CLASSIFIER_URL", LLM_URL)
     # Maximum seconds to wait for classifier responses (can be higher for slow LLMs)
     CLASSIFIER_TIMEOUT = int(os.getenv("CLASSIFIER_TIMEOUT", "30"))

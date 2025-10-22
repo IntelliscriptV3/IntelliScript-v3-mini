@@ -1,4 +1,6 @@
 .venv/
+venv_name/
+
 hashPassword.py
 __pycache__/
 *.pyc
